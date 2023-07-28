@@ -17,8 +17,9 @@ while True:
         print(lista_de_compras)
         continue
 
-    elif usuario == 'C':
+    elif usuario == 'c':
         lista_de_compras.clear
+        print(lista_de_compras)
         continue
 
     elif usuario == 'l':
@@ -29,3 +30,5 @@ while True:
     else:
         print('voce nao digitou nada')
         continue
+
+
