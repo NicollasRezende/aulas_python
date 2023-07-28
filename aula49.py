@@ -26,7 +26,7 @@ print(f'seu nome e "{lista2[0]}", sua senha e "{lista2[1]}", o numero digitado f
 
 
 
-# # lista3 = ['a', 'b', 'c',]
+lista3 = ['a', 'b', 'c',]
 
 lista3.insert(1, 'ola')#isso adiciona itens a lista podendo mover itens de lugar 
 
