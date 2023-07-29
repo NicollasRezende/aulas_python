@@ -4,17 +4,19 @@
 #variaveis:
 
 #criaçao dos dados do user    
-criar_login = input('Crie seu login: ')
-criar_senha = input('Crie sua senha: ')
-lista = []
+criar_login = input('Crie seu login: ')#cria o login e armazena os dados
+criar_senha = input('Crie sua senha: ')#cria o login e armazena os dados
+lista = [] #armazena os dados
 #codigo
 
-while True:
+while True:#enquanto true, loop infinito
 
     #pede os dados do usuario
-    login = input('Digite seu login: ')
+    login = input('Digite seu login: ') #pede os dados
     senha = input('Digite sua senha: ')
     
+
+    #variavei de conferencia de dados do usuario
     errou_senha = senha != criar_senha
     errou_login = login != criar_login
     errou_senha_e_login = errou_senha and errou_login
@@ -24,28 +26,32 @@ while True:
     if acertou_dados:
         print('BEM VINDO!')
         print('O que deseja realizar:')
-        opcoes = input('[a]Sair, [b]Adicionar um recado, [c]Apagar um recado, [d]Ver lista de recados.')
-    if opcoes == 'a':
+        opcoes = input('[a]Sair, [b]Adicionar um recado, [c]Apagar um recado, [d]Ver lista de recados.')#recebe os dados do usuario
+    if opcoes == 'a': #opçao para parar o programa
         print('Ate mais.')
-        break
-    if opcoes == 'b':
+        break #para o programa
+    if opcoes == 'b': #adiciona dados a lista onde ficam armazendos os dados que o user passar
         print('escreva o recado que deseja adicionar:')
         recado = input('')
-        lista.append(recado)
-    if opcoes == 'c':
+        lista.append(recado)#funçao que adiciona o dado passado por meio do input recado
+    if opcoes == 'c':#apagar algum dos dados inseridos dentro da lista
         print('Qual recado deseja apagar')
 
         for elementos, lista in enumerate(lista):
             print(elementos, lista)
         
         remover = input('Selecione o indice que deseja remover: ')
-        del lista[remover]
-    if opcoes == 'd':
-        print('Aqui esta sua lista:')
-        for elementos, lista in enumerate(lista):
-            print(elementos, lista)                
-    
+        del lista[remover]#apaga elementos da lista
+    if opcoes == 'd':#mostra ao usuario a lista com os dados inseridos
+        if lista == '':#se a lista estiver vazia ele nao mostra nada
+            print('nao a nada na lista')
+        else:#se houver dados str dentro da lista ele mostra a lista numerada
+            print('Aqui esta sua lista:')
+            for elementos, lista in enumerate(lista):
+                print(elementos, lista)                
+        
     #errou algum ou os dois dados de login
+    #possiveis erros de login
     if errou_senha_e_login:
         print('Voce errou senha e login, tente novamente.')
     elif errou_senha:
@@ -57,6 +63,9 @@ while True:
 
 
                                                             #codigo alternativo
+
+
+                                                            #tentei fazer um codigo altenativo compactando ele o maximo possivel
 
 
 
