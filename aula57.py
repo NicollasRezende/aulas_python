@@ -25,23 +25,6 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-# cpf = 746824890
-# calculo1 = int(cpf[0])*10
-# calculo2 = int(cpf[1])*9
-# calculo3 = int(cpf[2])*8
-# calculo4 = int(cpf[3])*7
-# calculo5 = int(cpf[4])*6
-# calculo6 = int(cpf[5])*5
-# calculo7 = int(cpf[6])*4
-# calculo8 = int(cpf[7])*3
-# calculo9 = int(cpf[8])*2
-# soma = calculo1 + calculo2 + calculo3 + calculo4 + calculo5 + calculo6 + calculo7 + calculo8 + calculo9
-# multi = soma * 10
-# dif = multi % 11
-
-# digito1 = 0 if dif > 9 else dif
-# print(digito1)
-
 import re
 import sys
 cpf = re.sub(r'[^0-9]', '', input('Digite Seu CPF: '))
