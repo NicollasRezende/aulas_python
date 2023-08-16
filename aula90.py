@@ -24,3 +24,4 @@ def divide(n, d):
 
 
 print(divide(8, '0'))
+
