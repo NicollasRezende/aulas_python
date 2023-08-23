@@ -2,7 +2,7 @@
 
 def soma(x, y):
         print(x + y)
-    
+
 def multi(x,y):
         print(x*y)
 
